@@ -28,7 +28,6 @@ export default function List({ checkTodo, deleteTodo, filteredTodos }) {
 								<button 
 									className={styles.btn_delete}
 									aria-label="투두 삭제하기"
-									title="투두 삭제하기"
 									onClick={() => deleteTodo(todo.id)}
 								>
 									<ImBin />

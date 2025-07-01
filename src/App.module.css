@@ -43,8 +43,6 @@ header .btn_mode svg {
 }
 
 .filterTab li {
-	cursor: pointer;
-	font-weight: 500;
 	margin-right: 2rem;
 }
 
@@ -59,10 +57,14 @@ header .btn_mode svg {
 	left: 0;
 }
 
+.filterTab button {
+	font-weight: 500;
+}
+
 /* List */
 .todoList {
 	height: 72%;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .todoList ul {

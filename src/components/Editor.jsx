@@ -38,6 +38,7 @@ export default function Editor({ createTodo }) {
 			<button 
 				className={styles.btn_add}
 				onClick={submitTodo}
+				title="투두 입력하기"
 			> 
 				Add
 			</button>

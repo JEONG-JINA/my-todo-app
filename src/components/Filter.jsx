@@ -1,30 +1,13 @@
 import styles from './../App.module.css';
 
-const tabs = [
-	{
-		id: '01',
-		category: 'All'
-	},
-	{
-		id: '02',
-		category: 'Active'
-	},
-	{
-		id: '03',
-		category: 'Completed'
-	}
-];
+const filters = ['All', 'Active', 'Completed'];
 
 export default function Filter({ filter, setFilter }) {
 	return (
 		<ul className={styles.filterTab}>
-			{tabs.map(tab => (
-				<li 
-					key={tab.id}
-					className={filter === tab.category ? styles.active : ''}
-					onClick={() => setFilter(tab.category)}
-				>
-					{tab.category}
+			{filters.map((f, i) => (
+				<li key={i} className={filter === f ? styles.active : ''}>
+					<button title={`투두 ${f} 항목 보기`} onClick={() => setFilter(f)}>{f}</button>
 				</li>
 			))}
 		</ul>

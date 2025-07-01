@@ -11,7 +11,6 @@ export default function Header({ darkMode, setDarkMode, filter, setFilter }) {
 				className={styles.btn_mode}
 				onClick={changeMode}
 				aria-label="모드 변경하기"
-				title="모드 변경하기"
 			>
 				{darkMode ? <IoSunny /> : <IoSunnyOutline />}
 			</button>
